@@ -3,9 +3,6 @@ package edu.ncsu.csc316.dsa.sorter;
 import java.util.Arrays;
 import java.util.Comparator;
 
-//import edu.ncsu.csc316.dsa.list.ArrayBasedList;
-//import edu.ncsu.csc316.dsa.list.List;
-
 /**
  * Serves as a sorting algorithm using the MergeSort algorithm.
  * @author Chase Helton
@@ -28,72 +25,6 @@ public class MergeSorter<E extends Comparable<E>> extends AbstractComparisonSort
 	public MergeSorter() {
 		this(null);
 	}
-	
-//	private List<E> strList;
-//	
-//	public MergeSorter(Comparator<E> comparator, List<E> input) {
-//		super(comparator);
-//		strList = input;
-//    }
-//     
-//    public void listSort() {
-//        strList = listMergeSort(strList);
-//    }
-// 
-//    public List<E> listMergeSort(List<E> data) {
-//    	List<E> left = new ArrayBasedList<E>();
-//    	List<E> right = new ArrayBasedList<E>();
-//        int center;
-// 
-//        if (data.size() == 1) {    
-//            return data;
-//        } else {
-//            center = data.size() / 2;
-//            for (int i = 0; i < center; i++) {
-//                left.add(i, data.get(i));
-//            }
-//            for (int i = center; i < data.size(); i++) {
-//            	right.add(i, data.get(i));
-//            }
-//            left  = listMergeSort(left);
-//            right = listMergeSort(right);
-//            listMerge(left, right, data);
-//        }
-//        return data;
-//    }
-// 
-//    private void listMerge(List<E> left, List<E> right, List<E> whole) {
-//        int leftIndex = 0;
-//        int rightIndex = 0;
-//        int wholeIndex = 0;
-//        while (leftIndex < left.size() && rightIndex < right.size()) {
-//            if ( (left.get(leftIndex).compareTo(right.get(rightIndex))) < 0) {
-//                whole.set(wholeIndex, left.get(leftIndex));
-//                leftIndex++;
-//            } else {
-//                whole.set(wholeIndex, right.get(rightIndex));
-//                rightIndex++;
-//            }
-//            wholeIndex++;
-//        }
-// 
-//        List<E> rest;
-//        int restIndex;
-//        if (leftIndex >= left.size()) {
-//            rest = right;
-//            restIndex = rightIndex;
-//        } else {
-//            rest = left;
-//            restIndex = leftIndex;
-//        }
-//        for (int i = restIndex; i < rest.size(); i++) {
-//            whole.set(wholeIndex, rest.get(i));
-//            wholeIndex++;
-//        }
-//    }
-//    
-//    
-//    
 
 	/**
 	 * Main sorting algorithm.
